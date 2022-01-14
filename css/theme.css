@@ -3673,8 +3673,10 @@ div.pp_overlay {
 
 
 .header-menu-left {
-
-	display:inline;
+	width: 100%;
+	position: relative;
+	
+	display:table;
 
 	float:left;
 
@@ -3685,7 +3687,7 @@ div.pp_overlay {
 
 
 .header-search-right {
-
+	
 	display:inline;
 
 	float:right;
@@ -4065,6 +4067,10 @@ div.pp_overlay {
 	margin:0px;
 
 	padding:14px 0px 0px 0px;
+	
+	justify-content: space-between;
+	
+	
 
 }
 
@@ -4087,19 +4093,14 @@ div.pp_overlay {
 }
 
 .menu {
-
-  display: inline-block;
-
-  vertical-align: top;
-
-  position: relative;
-
-  margin: 0;
-
-  text-align: right;
-
-  white-space: nowrap;
-
+    width: 100%;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    margin: 0;
+    justify-content: space-between;
+    white-space: nowrap;
+	text-align: center;
 }
 
 .menu li {
@@ -4323,19 +4324,12 @@ div.pp_overlay {
 
 
 .menu > li > .submenu{
-
-  	visibility: hidden;
-
-  	opacity:0;
-
- 	 transform: translate(0px, 20px);
-
-	-webkit-transform: translate(0px, 20px);
-
-	-moz-transform: translate(0px, 20px);
-
-	-o-transform: translate(0px, 20px);
-
+    visibility: hidden;
+    opacity: 0;
+    transform: translate(0px, 40px);
+    -webkit-transform: translate(0px, 40px);
+    -moz-transform: translate(0px, 40px);
+    -o-transform: translate(0px, 40px);
     transition: transform 0.6s ease 0s, opacity 0.6s ease 0s;
 
 }
@@ -7904,10 +7898,3 @@ color:#ffb300
 	color:#FFB300;
 
 }
-
-
-
-
-
-
-
